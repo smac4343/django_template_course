@@ -1,19 +1,13 @@
 import os
 
 from django.http import HttpResponse
-
-
-class Test:
-    pass
+from django.shortcuts import render
 
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 
-def index_all():
-    value = "Test"
-    for item in values:
-        print("gf")
-
-        return 0
+def main(request):
+    template = "polls/index.html"
+    return render(request, template)
