@@ -1,0 +1,2 @@
+https://www.educative.io/answers/what-are-django-commands
+
