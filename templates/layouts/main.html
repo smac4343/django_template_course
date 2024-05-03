@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    {% include 'includes/head.html' %}
+    {% block extrahead %}{% endblock extrahead %}
+    {% block extrastyle %}{% endblock extrastyle %}
+    <title>
+      {% block title %}{% endblock title %}
+    </title>
+</head>
+
+<body class="{% block bodyclass %}{% endblock bodyclass %}">
+    <div class="wrapper">
+        {% block sidebar %}
+        {% include 'includes/sidebar.html' %}
+        {% endblock sidebar %}
+        <div class="main-panel">
+            {% block content %}{% endblock content %}
+        </div>
+    </div>
+</body>

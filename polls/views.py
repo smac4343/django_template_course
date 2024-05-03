@@ -9,5 +9,5 @@ def index(request):
 
 
 def main(request):
-    template = "polls/index.html"
+    template = "pages/user.html"
     return render(request, template)
